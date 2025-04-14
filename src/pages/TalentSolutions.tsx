@@ -1,8 +1,8 @@
+// pages/TalentSolutions.tsx
 import { motion } from 'framer-motion';
-import { Users, Target, Layers, Compass, Search, Globe, MapPin, Award } from 'lucide-react';
+import { Users, Target, Layers, Compass, Search, MapPin, Globe, Award } from 'lucide-react';
 import { ParallaxBanner } from 'react-scroll-parallax';
 
-// Talent Services with Icons
 const services = [
   {
     title: 'Contingent Staffing',
@@ -35,9 +35,19 @@ const services = [
     icon: <MapPin className="h-12 w-12 text-cyan-400" />
   },
   {
-    title: 'Onshore, Offshore & Nearshore Staffing',
-    description: 'Flexible models to scale your workforce globally.',
-    icon: <Globe className="h-12 w-12 text-teal-400" />
+    title: 'Onshore Staffing',
+    description: 'Domestic staffing support tailored to regional and cultural needs.',
+    icon: <Globe className="h-12 w-12 text-blue-300" />
+  },
+  {
+    title: 'Offshore Staffing',
+    description: 'Scale with global talent while optimizing costs and availability.',
+    icon: <Globe className="h-12 w-12 text-indigo-400" />
+  },
+  {
+    title: 'Nearshore Staffing',
+    description: 'Time-zone friendly outsourcing solutions for seamless collaboration.',
+    icon: <Globe className="h-12 w-12 text-green-400" />
   },
   {
     title: 'PARLEY',
@@ -46,12 +56,10 @@ const services = [
   }
 ];
 
-
-
 export default function TalentSolutions() {
   return (
     <div className="min-h-screen bg-[#020817] text-white">
-      {/* Parallax Hero Section */}
+      {/* Hero */}
       <ParallaxBanner
         layers={[
           { image: '/images/talent.jpg', speed: -20 },
@@ -74,22 +82,23 @@ export default function TalentSolutions() {
         className="h-[70vh] w-full bg-cover bg-center"
       />
 
-      {/* Introduction Section */}
+      {/* Introduction */}
       <section className="py-20 bg-[#0a1225] text-center">
         <div className="section-container max-w-5xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 mb-6">
             Bridging the Gap Between Talent & Business Excellence
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            Teknismart is committed to connecting exceptional talent with businesses. Our staffing solutions
-            are designed to connect companies with highly skilled professionals who align perfectly with
-            their technical and cultural requirements. Whether you need short-term contract talent, long-term
-            hires, or hybrid models, we provide flexible staffing solutions to empower your organization.
+            Teknismart is committed to bridging the gap between exceptional talent and the businesses that need them most.
+            Our staffing solutions are designed to connect companies with highly skilled professionals who align perfectly
+            with their technical and cultural requirements. With a deep understanding of the IT industry, we specialize in
+            identifying and recruiting top-tier talent for a wide range of roles, from software developers and data analysts
+            to cybersecurity specialists and cloud architects...
           </p>
         </div>
       </section>
 
-      {/* Talent Services Section */}
+      {/* Talent Services */}
       <section className="py-20 bg-[#0f1c3b]">
         <div className="section-container">
           <h2 className="text-3xl font-bold text-center text-blue-500 mb-12">
@@ -116,7 +125,7 @@ export default function TalentSolutions() {
         </div>
       </section>
 
-      {/* Success Stories Section */}
+      {/* Success Stories */}
       <section className="py-20 bg-[#0a1225]">
         <div className="section-container">
           <h2 className="text-3xl font-bold text-center text-blue-500 mb-12">
@@ -127,20 +136,17 @@ export default function TalentSolutions() {
               {
                 title: 'Enterprise Transformation',
                 company: 'Fortune 500 Tech Company',
-                image:
-                  'https://images.unsplash.com/photo-1556761175-129418cb2dfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080'
+                image: 'https://images.unsplash.com/photo-1556761175-129418cb2dfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080'
               },
               {
                 title: 'Startup Scale-up',
                 company: 'Innovative FinTech',
-                image:
-                  'https://images.unsplash.com/photo-1559526324-593bc073d938?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080'
+                image: 'https://images.unsplash.com/photo-1559526324-593bc073d938?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080'
               },
               {
                 title: 'Digital Transformation',
                 company: 'Healthcare Provider',
-                image:
-                  'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080'
+                image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080'
               }
             ].map((story, index) => (
               <motion.div
@@ -165,8 +171,7 @@ export default function TalentSolutions() {
         </div>
       </section>
 
-
-      {/* CTA Section */}
+      {/* CTA */}
       <section className="py-24 bg-gradient-to-br from-[#1a237e] via-[#0a1225] to-[#3B82F6] text-white text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

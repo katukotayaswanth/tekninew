@@ -4,11 +4,12 @@ import { Building2, Phone, Mail, Clock, Send } from 'lucide-react';
 export default function ContactUs() {
   return (
     <div className="min-h-screen bg-[#020817]">
-      <PageHeader 
-        title="Contact Us" 
-        subtitle="Get in Touch with Our Team"
-        image="https://source.unsplash.com/random/1920x1080?office,contact"
-      />
+    <PageHeader 
+      title="Contact Us" 
+      subtitle="Get in Touch with Our Team"
+      image="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=1920&q=80"
+    />
+
 
       <section className="py-20">
         <div className="section-container">

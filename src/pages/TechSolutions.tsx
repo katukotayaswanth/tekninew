@@ -1,45 +1,55 @@
+// pages/TechSolutions.tsx
 import { PageHeader } from '../components/PageHeader';
-import { Cloud, Shield, Brain, Code2, Layers, Server, Database, Smartphone, Zap, PackageSearch } from 'lucide-react';
+import {
+  Shield, Cloud, Brain, Code2, Layers, Server, Database, Smartphone, Zap, PackageSearch, Briefcase
+} from 'lucide-react';
 
 export default function TechSolutions() {
   const solutions = [
     {
       icon: <Shield className="h-12 w-12 text-red-400" />,
       title: "Cybersecurity & Risk Management",
-      description: "Protecting digital assets and mitigating cybersecurity threats with advanced solutions.",
+      description: "Protecting digital assets and mitigating cybersecurity threats.",
       features: [
         "IAM/IGA, PAM, SSO/MFA",
-        "Threat Intelligence",
-        "Cloud Security",
-        "Incident Response & Forensics"
+        "Threat Intelligence & Vulnerability Management",
+        "Network & Endpoint Security",
+        "Cloud Security & Data Protection",
+        "Incident Response & Forensics",
+        "Risk Assessment & Compliance",
+        "Identity & Access Management (IAM)",
+        "Security Operations Center (SOC)"
       ]
     },
     {
       icon: <Cloud className="h-12 w-12 text-blue-400" />,
       title: "Cloud Solutions",
-      description: "Empowering businesses with secure, scalable, and compliant cloud infrastructures.",
+      description: "Secure, scalable cloud architecture & compliance.",
       features: [
-        "AWS, Azure, GCP",
+        "Cloud Infrastructure & Architecture (AWS, Azure, GCP)",
         "Cloud Migration & Optimization",
         "Serverless Computing",
-        "Multi-cloud Solutions"
+        "Cloud Security & Compliance",
+        "Multi-cloud & Hybrid-cloud Solutions"
       ]
     },
     {
       icon: <Brain className="h-12 w-12 text-emerald-400" />,
       title: "AI & ML Services",
-      description: "Harnessing the power of AI to optimize business processes and improve decision-making.",
+      description: "Harnessing AI to optimize operations and decision-making.",
       features: [
-        "NLP & Chatbots",
-        "Computer Vision",
+        "Natural Language Processing (NLP)",
+        "Computer Vision & Image Recognition",
         "Predictive Analytics",
-        "AI-driven Automation"
+        "Reinforcement Learning",
+        "AI-driven Automation & Chatbots",
+        "AI Model Development & Deployment"
       ]
     },
     {
       icon: <Code2 className="h-12 w-12 text-purple-400" />,
       title: "NextGen Technologies",
-      description: "Exploring cutting-edge technologies to drive innovation and business growth.",
+      description: "Explore the frontier of tech for business innovation.",
       features: [
         "Internet of Things (IoT)",
         "Augmented Reality (AR) & Virtual Reality (VR)",
@@ -50,7 +60,7 @@ export default function TechSolutions() {
     {
       icon: <Layers className="h-12 w-12 text-yellow-400" />,
       title: "Technology Modernization",
-      description: "Transforming legacy systems into modern architectures.",
+      description: "Modernizing legacy systems and building cloud-native solutions.",
       features: [
         "Legacy System Migration",
         "Cloud-Native Development",
@@ -61,56 +71,80 @@ export default function TechSolutions() {
     {
       icon: <Smartphone className="h-12 w-12 text-cyan-400" />,
       title: "Mobile Application Development",
-      description: "Crafting intuitive and secure mobile apps for Android and iOS.",
+      description: "Designing and securing intuitive mobile experiences.",
       features: [
         "Native Mobile Apps",
         "Cross-Platform Development",
         "Mobile UX/UI Design",
-        "App Security & Maintenance"
+        "Mobile App Security & Maintenance"
       ]
     },
     {
       icon: <Database className="h-12 w-12 text-indigo-400" />,
       title: "Big Data & Analytics",
-      description: "Leveraging data to derive actionable insights and business intelligence.",
+      description: "Leveraging data for insights, intelligence, and strategy.",
       features: [
         "Data Warehousing & ETL",
         "Real-Time Analytics",
         "Data Visualization",
-        "AI-Driven Insights"
+        "Predictive Analytics & AI-Driven Insights"
       ]
     },
     {
       icon: <Zap className="h-12 w-12 text-orange-400" />,
-      title: "Automation & Process Improvement",
-      description: "Automating workflows to boost operational efficiency.",
+      title: "DevOps & CI/CD",
+      description: "Streamlined development and deployment automation.",
       features: [
-        "Robotic Process Automation (RPA)",
-        "Intelligent Process Automation (IPA)",
-        "Business Process Management",
-        "Workflow Automation"
-      ]
-    },
-    {
-      icon: <Server className="h-12 w-12 text-pink-400" />,
-      title: "IT Infrastructure Management",
-      description: "Ensuring optimal performance and security of IT infrastructures.",
-      features: [
-        "Cloud Infrastructure Management",
-        "Network & Server Optimization",
-        "Disaster Recovery & Backup",
-        "Performance Monitoring"
+        "Automated Testing & Deployment",
+        "Infrastructure as Code (IaC)",
+        "Continuous Monitoring & Logging",
+        "Containerization (Docker, Kubernetes)"
       ]
     },
     {
       icon: <PackageSearch className="h-12 w-12 text-teal-400" />,
       title: "Blockchain Solutions",
-      description: "Innovative blockchain technologies for secure and decentralized solutions.",
+      description: "Decentralized and secure blockchain technologies.",
       features: [
         "Smart Contracts Development",
-        "dApps",
+        "Decentralized Applications (dApps)",
         "Cryptography & Blockchain Security",
-        "NFT & Digital Assets"
+        "NFT & Digital Asset Solutions"
+      ]
+    },
+    {
+      icon: <Server className="h-12 w-12 text-pink-400" />,
+      title: "IT Infrastructure Management",
+      description: "Ensuring optimal IT performance and resilience.",
+      features: [
+        "Cloud Infrastructure Management (AWS, Azure, GCP)",
+        "Network & Server Optimization",
+        "Disaster Recovery & Backup Solutions",
+        "Performance Monitoring & Load Balancing"
+      ]
+    },
+    {
+      icon: <Zap className="h-12 w-12 text-orange-300" />,
+      title: "Automation & Process Improvement",
+      description: "Streamlining operations with smart automation.",
+      features: [
+        "Robotic Process Automation (RPA)",
+        "Intelligent Process Automation (IPA)",
+        "Business Process Management (BPM)",
+        "Workflow Automation Solutions"
+      ]
+    },
+    {
+      icon: <Briefcase className="h-12 w-12 text-lime-400" />,
+      title: "Professional Services",
+      description: "Comprehensive IT consulting & delivery services.",
+      features: [
+        "IT Consulting & Advisory",
+        "System Integration",
+        "Managed Services",
+        "Custom Software Development",
+        "IT Support & Maintenance",
+        "Training & Enablement"
       ]
     }
   ];
@@ -133,39 +167,18 @@ export default function TechSolutions() {
         subtitle="Innovative Technology Solutions for Modern Businesses"
         image="images/technology.jpg"
       />
-{/*  Introduction Section */}
-<section className="relative py-24 bg-[#0a1225] text-white overflow-hidden">
-  {/* Subtle Background Gradient */}
-  <div className="absolute inset-0 bg-gradient-to-b from-[#0a1225] via-[#111c36] to-[#0a1225] opacity-90" />
 
-  <div className="section-container relative z-10 max-w-5xl mx-auto text-center px-6 sm:px-12">
-    {/* Decorative Subtle Line Accent */}
-    <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-48 h-1 bg-gradient-to-r from-blue-500 via-white/30 to-purple-500 rounded-full opacity-20" />
+      <section className="py-20 bg-[#0a1225] text-white">
+        <div className="section-container max-w-5xl mx-auto px-6 text-center">
+          <p className="text-gray-300 text-lg leading-relaxed">
+            At <span className="text-blue-400 font-medium">Teknismart</span>, we understand that technology is the
+            cornerstone of modern business success. Our mission is to provide innovative and scalable technology
+            solutions that address your unique challenges and enable your organization to thrive in a rapidly evolving
+            digital world...
+          </p>
+        </div>
+      </section>
 
-    <div className="bg-white/5 backdrop-blur-md rounded-xl shadow-lg px-8 py-14 sm:px-16 border border-white/10 transition-all duration-300">
-      <h2 className="text-3xl sm:text-5xl font-bold mb-6 text-gradient bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-        Empowering Businesses Through Technology
-      </h2>
-
-      <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-        At <span className="text-blue-400 font-medium">Teknismart</span>, we recognize that
-        <span className="text-purple-400 font-medium"> technology</span> is the backbone of modern business success.
-        We deliver <span className="text-blue-400 font-medium">innovative</span> and
-        <span className="text-purple-400 font-medium"> scalable</span> solutions that meet unique challenges and
-        drive growth in today’s fast-evolving digital landscape.
-      </p>
-    </div>
-  </div>
-
-  {/* Soft Ambient Glows */}
-  <div className="absolute inset-0 pointer-events-none">
-    <div className="absolute w-32 h-32 bg-blue-500 rounded-full blur-[100px] opacity-10 top-1/4 left-1/5" />
-    <div className="absolute w-40 h-40 bg-purple-500 rounded-full blur-[100px] opacity-10 bottom-1/4 right-1/4" />
-  </div>
-</section>
-
-
-      {/* Technology Solutions */}
       <section className="py-20">
         <div className="section-container">
           <h2 className="text-3xl font-bold text-center text-blue-500 mb-12">
@@ -183,10 +196,10 @@ export default function TechSolutions() {
                       {solution.title}
                     </h3>
                     <p className="text-gray-400 mb-4">{solution.description}</p>
-                    <ul className="grid grid-cols-2 gap-2">
+                    <ul className="grid grid-cols-1 gap-2">
                       {solution.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center text-sm text-gray-400">
-                          <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                        <li key={idx} className="flex items-start text-sm text-gray-400">
+                          <span className="w-2 h-2 mt-2 bg-blue-500 rounded-full mr-2 shrink-0"></span>
                           {feature}
                         </li>
                       ))}
@@ -199,7 +212,7 @@ export default function TechSolutions() {
         </div>
       </section>
 
-      {/* Industries We Serve */}
+      {/* Industries */}
       <section className="py-20 bg-[#0a1225]">
         <div className="section-container">
           <h2 className="text-3xl font-bold text-center text-blue-500 mb-12">

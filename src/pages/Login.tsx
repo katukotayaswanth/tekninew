@@ -1,4 +1,3 @@
-import React from 'react';
 import { Mail, Lock } from 'lucide-react';
 
 export default function Login() {
