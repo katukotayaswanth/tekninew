@@ -1,5 +1,3 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import { Building2, Phone, Mail, Clock, Send, Facebook, Twitter, Linkedin } from 'lucide-react';
 
 export function Footer() {
@@ -124,7 +122,7 @@ export function Footer() {
         </div>
 
         <div className="text-center text-gray-400 pt-8 border-t border-gray-800">
-          <p>©2025 Teknismart. All rights reserved.</p>
+          <p>©2025 Teknismart Solutions Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>

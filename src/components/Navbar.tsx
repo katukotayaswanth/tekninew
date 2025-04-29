@@ -70,12 +70,7 @@ export function Navbar() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all group-hover:w-full"></span>
               </Link>
             ))}
-            <Link
-              to="/login"
-              className="relative group overflow-hidden rounded-full bg-blue-500 px-6 py-2 text-white font-semibold hover:brightness-110 transition-all"
-            >
-              Login
-            </Link>
+
           </div>
 
           {/* Mobile Menu Button */}
