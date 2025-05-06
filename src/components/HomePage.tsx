@@ -5,7 +5,7 @@ import { AnimatedNumber } from './AnimatedNumber';
 import { motion } from 'framer-motion';
 
 export function HomePage() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [ ,setIsScrolled] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentWord, setCurrentWord] = useState(0);
   
